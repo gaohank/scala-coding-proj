@@ -6,8 +6,8 @@ package cn.gaohank.program.scala.base.base_10_implicit
 
 // TYPE
 object  type1 {
-    implicit val food = "banana"
-    implicit val num = 84
+    implicit val food: String = "banana"
+    implicit val num: Int = 84
 }
 object ImplicitDemo {
     def eat()(implicit food:String = "chiken") :Unit = {
