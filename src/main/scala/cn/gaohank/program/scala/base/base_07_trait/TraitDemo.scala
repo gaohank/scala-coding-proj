@@ -4,27 +4,27 @@ package cn.gaohank.program.scala.base.base_07_trait
 
 trait Listen{
     val name: String
-    def listen() = {
+    def listen(): Unit = {
         println("You friend " + name + " is listening")
     }
 }
 
 trait Read{
     val name: String
-    def read() = {
+    def read(): Unit = {
         println("You friend " + name + " is reading")
     }
 }
 
 trait Speak{
     val name: String
-    def speak() = {
+    def speak(): Unit = {
         println("You friend " + name + " is speaking.")
     }
 }
 
 class Human(val name : String){
-    def listen() = {
+    def listen(): Unit = {
         println(name + " is listening.")
     }
 }
