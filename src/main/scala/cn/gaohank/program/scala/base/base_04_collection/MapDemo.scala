@@ -6,6 +6,8 @@ object MapDemo {
     def main(args: Array[String]): Unit = {
         // 定长map，不可修改
         val scores = Map("hank" -> 85, "james" -> 90, "stan" -> 92)
+        // Map(hank -> 85, james -> 90, stan -> 92)
+        println(scores)
         // 90
         println(scores("james"))
         // 60
