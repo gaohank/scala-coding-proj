@@ -14,6 +14,7 @@ import scala.collection.mutable.ListBuffer
 object ListDemo {
     def main(args: Array[String]): Unit = {
         val list = List(1, 2, 3)
+        println(list.filter(v => v == 4) ::: List(123, 345) ::: list.filter(v =>v == 5))
         println(list.head)
         println(list.tail)
         println(list(1))
