@@ -14,6 +14,7 @@ import scala.collection.mutable.ListBuffer
 object ListDemo {
     def main(args: Array[String]): Unit = {
         val list = List(1, 2, 3)
+        println(list.filter(v => v==4).head)
         println(list.head)
         println(list.tail)
         println(list(1))
@@ -38,6 +39,8 @@ object ListDemo {
         println(ints :+ 6)
         ints.insert(1,10,9)
         // ListBuffer(1, 10, 9, 2, 3, 4, 5)
+        println(100 +: ints)
+        ints.remove(4)
         println(ints)
     }
 }
