@@ -42,5 +42,11 @@ object ListDemo {
         println(100 +: ints)
         ints.remove(4)
         println(ints)
+
+        val nums = List(10, 6, 8, 9, 3, 1)
+        val newNums = nums.sortBy(-_).headOption
+        val max = nums.max
+        println(newNums)
+        println(max)
     }
 }
