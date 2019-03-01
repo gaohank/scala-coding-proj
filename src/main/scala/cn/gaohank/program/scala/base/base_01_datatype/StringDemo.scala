@@ -7,5 +7,8 @@ object StringDemo {
         println("123".head)
         // hank-bob
         println(List("hank", "bob").mkString("-"))
+
+        val str: String = null
+        println(Option(str).isEmpty)
     }
 }
