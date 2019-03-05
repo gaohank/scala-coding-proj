@@ -7,6 +7,9 @@ class StringDemoTest extends FunSuite {
     test("test String") {
         val name: String = null
         assert(Option(name) === Option.empty)
+
+        val category = ""
+        assert(category.isEmpty === true)
     }
 
     test("test String to List") {
